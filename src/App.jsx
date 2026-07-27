@@ -10,11 +10,11 @@ import Book from './pages/book/Book';
 import Cart from './pages/cart/Cart';
 import Checkout from './pages/checkout/Checkout';
 import NotFound from './pages/not-found/NotFound';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -29,7 +29,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -1,16 +1,112 @@
-# React + Vite
+# 📚 Book Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured React.js e-commerce web application for an online book store — complete with a product catalog, shopping cart, checkout flow, authentication, and a clean, fully responsive UI.
 
-Currently, two official plugins are available:
+## 🌍 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 https://mustafacoder365.github.io/Book-Store-Application/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📖 Book catalog with 3 curated homepage carousels (Most Gifted, Best Seller, Most Wished For)
+- 🔍 Live search by book title or author
+- 📄 Dynamic book details page with specs, quantity selector, and related titles
+- ✍️ Authors directory (30 authors) linked to search
+- 🛒 Fully functional shopping cart (Context API + localStorage persistence)
+- 💳 Multi-step checkout flow with shipping form, order summary, and order confirmation
+- 🔐 Login & Register — available both as a modal (with mode switching) and as standalone pages, with client-side validation and demo authentication state
+- 👤 Persistent login state reflected in the header (shows logged-in user + logout)
+- 🧭 404 Not Found page for unmatched routes
+- 📬 Contact form with validation
+- 🌗 Quick-view modal for books
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- ♿ Keyboard-accessible interactive controls
 
-## Expanding the ESLint configuration
+## 🛠 Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React 19](https://react.dev/)
+- [React Router DOM 7](https://reactrouter.com/)
+- [Vite](https://vitejs.dev/)
+- React Context API (cart & auth state management)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
+- CSS3 (component-scoped stylesheets)
+- ESLint
+
+## 📸 Screenshots
+
+| Home | Book Details |
+|------|---------------|
+| _add screenshot_ | _add screenshot_ |
+
+| Cart | Checkout |
+|------|----------|
+| _add screenshot_ | _add screenshot_ |
+
+| Login | Authors |
+|-------|---------|
+| _add screenshot_ | _add screenshot_ |
+
+## 📂 Project Structure
+
+```
+book-store-pro/
+├── public/
+│   ├── authors/
+│   └── books/
+├── src/
+│   ├── components/
+│   │   ├── auth-modal/
+│   │   ├── book-slider/
+│   │   ├── footer/
+│   │   ├── header/
+│   │   ├── heading-title/
+│   │   ├── modal/
+│   │   ├── search-results/
+│   │   └── services/
+│   ├── context/
+│   │   ├── AuthContext.jsx
+│   │   └── CartContext.jsx
+│   ├── data/
+│   │   ├── authors.js
+│   │   └── books.js
+│   ├── pages/
+│   │   ├── about/
+│   │   ├── authors/
+│   │   ├── book/
+│   │   ├── cart/
+│   │   ├── checkout/
+│   │   ├── contact/
+│   │   ├── forms/
+│   │   ├── home/
+│   │   └── not-found/
+│   ├── App.jsx
+│   └── main.jsx
+├── vite.config.js
+└── README.md
+```
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/MustafaCoder365/Book-Store-Application.git
+cd Book-Store-Application
+npm install
+npm run dev
+```
+
+## 📦 Deployment (GitHub Pages)
+
+This project is preconfigured for GitHub Pages using `gh-pages` and `HashRouter`:
+
+```bash
+npm run deploy
+```
+
+This builds the app and publishes the `dist` folder to the `gh-pages` branch automatically.
+
+## 👤 Author
+
+**Mustafa Shakir**
+- 🌐 GitHub: https://github.com/MustafaCoder365
+- 💼 LinkedIn: https://www.linkedin.com/in/mustafa-shakir-840374330
+- 📧 Email: mustafa1997670@gmail.com
