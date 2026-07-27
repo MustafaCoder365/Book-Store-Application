@@ -34,17 +34,21 @@ A full-featured React.js e-commerce web application for an online book store —
 
 ## 📸 Screenshots
 
-| Home | Book Details |
-|------|---------------|
-| _add screenshot_ | _add screenshot_ |
+| Home | Catalog |
+|------|---------|
+| ![Home](./screenshots/home.png) | ![Catalog](./screenshots/catalog.png) |
 
-| Cart | Checkout |
-|------|----------|
-| _add screenshot_ | _add screenshot_ |
+| Cart | About |
+|------|-------|
+| ![Cart](./screenshots/cart.png) | ![About](./screenshots/about.png) |
 
-| Login | Authors |
-|-------|---------|
-| _add screenshot_ | _add screenshot_ |
+| Contact | Footer |
+|---------|--------|
+| ![Contact](./screenshots/contact.png) | ![Footer](./screenshots/footer.png) |
+
+| Login | Register |
+|-------|----------|
+| ![Login](./screenshots/login.png) | ![Register](./screenshots/register.png) |
 
 ## 📂 Project Structure
 
