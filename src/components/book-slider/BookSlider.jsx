@@ -3,6 +3,7 @@ import './book-slider.css';
 import Rating from './Rating.jsx';
 import Modal from '../modal/Modal.jsx';
 import { useCart } from '../../context/useCart.js';
+import { assetUrl } from '../../utils/asset.js';
 
 export default function BookSlider({ data }) {
   const { addToCart } = useCart();
@@ -51,7 +52,7 @@ export default function BookSlider({ data }) {
         {data.map((item) => (
           <div key={item.id} className="book-slide-item">
             <img
-              src={`/books/${item.image}`}
+              src={assetUrl(`/books/${item.image}`)}
               alt={item.title}
               className="book-slide-item-img"
             />

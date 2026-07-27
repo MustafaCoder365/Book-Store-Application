@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { books } from '../../data/books';
 import { useCart } from '../../context/useCart';
 import Rating from '../../components/book-slider/Rating';
+import { assetUrl } from '../../utils/asset';
 import './book.css';
 
 export default function Book() {
@@ -46,7 +47,7 @@ export default function Book() {
 
       <div className="book-details">
         <div className="book-details-img-wrapper">
-          <img src={`/books/${book.image}`} alt={book.title} />
+          <img src={assetUrl(`/books/${book.image}`)} alt={book.title} />
         </div>
 
         <div className="book-details-info">
@@ -127,7 +128,7 @@ export default function Book() {
                 to={`/book/${item.id}`}
                 className="book-related-card"
               >
-                <img src={`/books/${item.image}`} alt={item.title} />
+                <img src={assetUrl(`/books/${item.image}`)} alt={item.title} />
                 <h3>{item.title}</h3>
                 <span>${item.price.toFixed(2)}</span>
               </Link>

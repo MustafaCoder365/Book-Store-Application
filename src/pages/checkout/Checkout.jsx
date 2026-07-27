@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/useCart';
+import { assetUrl } from '../../utils/asset';
 import './checkout.css';
 
 const initialForm = { fullName: '', address: '', city: '', phone: '' };
@@ -166,7 +167,7 @@ export default function Checkout() {
           <div className="checkout-summary-items">
             {items.map((item) => (
               <div key={item.id} className="checkout-summary-item">
-                <img src={`/books/${item.image}`} alt={item.title} />
+                <img src={assetUrl(`/books/${item.image}`)} alt={item.title} />
                 <div>
                   <p className="checkout-summary-item-title">{item.title}</p>
                   <p className="checkout-summary-item-qty">

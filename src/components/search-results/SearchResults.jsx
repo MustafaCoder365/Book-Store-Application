@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/useCart';
+import { assetUrl } from '../../utils/asset';
 import Rating from '../book-slider/Rating';
 import './search-results.css';
 
@@ -22,7 +23,7 @@ export default function SearchResults({ query, results }) {
           {results.map((book) => (
             <div key={book.id} className="search-result-card">
               <Link to={`/book/${book.id}`} className="search-result-img">
-                <img src={`/books/${book.image}`} alt={book.title} />
+                <img src={assetUrl(`/books/${book.image}`)} alt={book.title} />
               </Link>
               <Link to={`/book/${book.id}`} className="search-result-title">
                 {book.title}

@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/useCart';
+import { assetUrl } from '../../utils/asset';
 import './cart.css';
 
 export default function Cart() {
@@ -36,7 +37,7 @@ export default function Cart() {
               <article key={item.id} className="cart-item">
                 <Link to={`/book/${item.id}`}>
                   <img
-                    src={`/books/${item.image}`}
+                    src={assetUrl(`/books/${item.image}`)}
                     alt={item.title}
                     className="cart-item-img"
                   />

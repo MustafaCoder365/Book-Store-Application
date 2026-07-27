@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { authors } from '../../data/authors';
+import { assetUrl } from '../../utils/asset';
 import './authors.css';
 
 export default function Authors() {
@@ -17,7 +18,7 @@ export default function Authors() {
             to={`/?search=${encodeURIComponent(author.name)}`}
             className="author-card"
           >
-            <img src={author.image} alt={author.name} />
+            <img src={assetUrl(author.image)} alt={author.name} />
             <h2>{author.name}</h2>
           </Link>
         ))}
